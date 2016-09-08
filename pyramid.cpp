@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   main.cpp
  * Author: georgem
@@ -20,16 +14,13 @@ int main() {
     cout << "Enter pyramid height:";
     cin >> height;
     for (int i = 1; i <= height; i++) {
-        int e1 = (2*height - i*2)/2;
+        int e1 = (height - i);
         int e2 = i*2;
         for (int j = 1; j <= e1; j++) {
             cout << " ";
         }
         for (int j = 1; j <= e2; j++) {
             cout << "*";
-        }
-        for (int j = 1; j <= e1; j++) {
-            cout << " ";
         }
         cout << endl;
     }
