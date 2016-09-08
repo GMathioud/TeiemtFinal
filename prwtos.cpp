@@ -14,7 +14,7 @@ using namespace std;
  */
 bool first(int inp) {
     if (inp >= 1 && inp <= 1000) {
-        for (int i = 2; i <= n/2; i++) {
+        for (int i = 2; i <= inp/2; i++) {
             if (!(i == inp)) {
                 if (inp % i == 0) {
                     return false;
